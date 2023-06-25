@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root{
+    --strongCyan: hsl(171, 66%, 44%);
+    --lightBlue: hsl(233, 100%, 69%);
+    --darkGrayshBlue: hsl(210, 10%, 33%);
+    --grayishBlue: hsl(201, 11%, 66%);
+    --font-family: 'Bai Jamjuree', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: 18px;
+    color: var(--grayishBlue)
+}
+.mobile{
+    display: none;
+    position: relative;
+}
+
+.desktop{
+    display: block;
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+h3,h4,h5{
+    color: var(--darkGrayshBlue);
+    margin-bottom: 20px;
+}
+
+.first_heading{
+    font-size: 35px;
+    letter-spacing: 0.15rem;
+}
+
+.headContent_1,
+.headContent_2{
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn_flex{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn_flex .btn{
+    border: transparent;
+    padding: 10px;
+    border-radius: 20px;
+    width: 30%;
+}
+
+.btn_flex .cyan,
+.main_foot .cyan{
+    font-family: var(--font-family);
+    background-color: var(--strongCyan);
+    color: #fff;
+    box-shadow: 0 5px 10px 0  var(--strongCyan);
+}
+
+.btn_flex .cyan:hover,
+.main_foot .cyan:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.btn_flex .blue,
+.main_foot .blue{
+    font-family: var(--font-family);
+    background-color: var(--lightBlue);
+    color: #fff;
+    box-shadow: 0 5px 10px 0 var(--lightBlue);
+}
+
+.btn_flex .blue:hover,
+.main_foot .blue:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.headContent_2{
+    margin-top: 2rem;
+}
+
+.headContent_2 h3{
+    margin-top: 100px;
+    font-size: 25px;
+}
+
+.main_content{
+    margin-top: 70px;
+}
+
+.computer_flex{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.computer{
+    position: relative;
+}
+
+.computer img{
+    position: relative;
+    left: -30px;
+}
+
+.computer_text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text_right{
+    line-height: 1.5rem;
+    width: 55%;
+}
+
+.device_flex{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.text_flex{
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+    padding: 0 100px;
+}
+
+.text_flex > div{
+    width: 33.3%;
+    text-align: center;
+}
+
+.img_flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    width: 80%;
+    margin: 100px auto;
+}
+
+.main_foot{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.foot_content{
+    background-color: hsl(204, 24%, 96%);
+    padding: 20px 100px;
+    margin-top: 100px;
+}
+
+.foot_clone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot_left{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.foot_logo{
+    width: 50px;
+}
+
+.link_flex{
+    display: flex;
+    gap: 50px;
+}
+
+.link_flex ul li {
+    list-style-type: none;
+    line-height: 40px;
+}
+
+.link_flex ul li a{
+    text-decoration: none;
+    color: var(--darkGrayshBlue);
+}
+
+.link_flex ul li a:hover{
+    cursor: pointer;
+    color: var(--strongCyan);
+}
+
+.icon-flex{
+    display: flex;
+    gap: 1rem;
+}
+
+.icon-flex a:hover{
+    cursor: pointer;
+    color: var(--strongCyan) !important;
+    background-color: var(--strongCyan);
+    
+}
+
+.attribution { 
+    font-size: 15px; 
+    text-align: center;
+    color: var(--darkGrayshBlue);
+    margin-top: 10px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.attribution a:hover{
+    color: var(--strongCyan);
+}
+
+@media screen and (max-width:375px) {
+    .mobile{
+        display: block;
+    }
+    
+    .desktop{
+        display: none;
+    }
+    
+    .first_heading{
+        font-size: 30px;
+        letter-spacing: 0.1rem;
+    }
+    
+    .headContent_1,
+    .headContent_2{
+        width: 90%;
+    }
+    
+    .btn_flex{
+        flex-direction: column;
+    }
+    
+    .btn_flex .btn{
+        width: 50%;
+        margin: auto;
+    }
+    
+    .main_content{
+        width: 90%;
+    }
+
+    .computer_flex{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .computer img{
+        position: relative;
+        left: 50%;
+        transform: translate(-45%);
+    }
+    
+    .computer_text{
+      text-align: center;
+      width: 100%;
+    }
+    
+    .text_right{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .device_flex{
+        width: 90%;
+    }
+    
+    .text_flex{
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    
+    .text_flex > div{
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .img_flex{
+        flex-direction: column;
+        padding: 0 20px;
+        width: 100%;
+        margin: 100px auto;
+        text-align: center;
+    }
+    
+    .img_flex img{
+        margin-top: 30px;
+    }
+
+    .main_foot{
+        width: 90%;
+    }
+    
+    .foot_content{
+        padding: 20px 50px;
+    }
+    
+    .foot_clone{
+        flex-direction: column;
+    }
+    
+    .foot_left{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    
+    .foot_logo{
+        width: 50px;
+    }
+    
+    .link_flex{
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+    }
+    
+    .icon-flex{
+        display: flex;
+        gap: 1rem;
+        margin-top: 20px;
+    }
+    
+    .attribution { 
+        font-size: 12px; 
+        margin-top: 30px;
+    }
+}
